@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "useBuiltIns": false,
+        "debug": false
+      }
+    ]
+  ],
+  "plugins": ["lodash", "@babel/plugin-transform-runtime", "@babel/plugin-syntax-dynamic-import"],
+  "comments": true,
+  "env": {
+    "test": {
+      "presets": ["@babel/preset-env"]
+    }
+  }
+}
